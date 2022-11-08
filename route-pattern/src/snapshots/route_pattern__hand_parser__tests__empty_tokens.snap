@@ -1,0 +1,6 @@
+---
+source: src/hand_parser.rs
+expression: "serialize(&parse(\"\", '<', '>').unwrap())"
+---
+[]
+

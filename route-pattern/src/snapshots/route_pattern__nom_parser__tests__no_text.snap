@@ -1,0 +1,7 @@
+---
+source: src/nom_parser.rs
+expression: "parse(\"<foobar>\", '<', '>').finish().map(serialize).unwrap()"
+---
+- "remaining:[]"
+- - "regex:foobar"
+

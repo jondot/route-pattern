@@ -1,0 +1,7 @@
+---
+source: src/nom_parser.rs
+expression: "parse(\"\", '<', '>').finish().map(serialize).unwrap()"
+---
+- "remaining:[]"
+- []
+

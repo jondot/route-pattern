@@ -1,0 +1,11 @@
+---
+source: src/nom_parser.rs
+expression: "parse(\"<re1>foobar<a<1,5>foo>foo3<re11>\", '<',\n                '>').finish().map(serialize).unwrap()"
+---
+- "remaining:[]"
+- - "regex:re1"
+  - "text:foobar"
+  - "regex:a<1,5>foo"
+  - "text:foo3"
+  - "regex:re11"
+

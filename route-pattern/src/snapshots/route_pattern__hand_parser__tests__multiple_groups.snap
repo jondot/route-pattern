@@ -1,0 +1,10 @@
+---
+source: src/hand_parser.rs
+expression: "serialize(&parse(\"/ar<\\\\S+>/<.+>/update\", '<', '>').unwrap())"
+---
+- "text:/ar"
+- "regex:\\S+"
+- "text:/"
+- "regex:.+"
+- "text:/update"
+

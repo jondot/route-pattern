@@ -1,0 +1,9 @@
+---
+source: src/nom_parser.rs
+expression: "parse(\"/foo/{a{1,2}-.+}/update\", '{', '}').finish().map(serialize).unwrap()"
+---
+- "remaining:[]"
+- - "text:/foo/"
+  - "regex:a{1,2}-.+"
+  - "text:/update"
+

@@ -1,0 +1,9 @@
+---
+source: route-pattern/src/nom_parser.rs
+expression: "parse(\"foobar<yo>>\", '<', '>').finish().map(serialize).unwrap()"
+---
+- "remaining:[]"
+- - "text:foobar"
+  - "regex:yo"
+  - "text:>"
+

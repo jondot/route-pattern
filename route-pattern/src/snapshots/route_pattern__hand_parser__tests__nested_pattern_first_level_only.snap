@@ -1,0 +1,8 @@
+---
+source: src/hand_parser.rs
+expression: "serialize(&parse(\"/articles/<a<.+>b>/update\", '<', '>').unwrap())"
+---
+- "text:/articles/"
+- "regex:a<.+>b"
+- "text:/update"
+
