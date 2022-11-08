@@ -3,10 +3,16 @@ name = "route-pattern"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "A parser and matcher for route patterns"
+authors = ["Dotan Nahum <dotan@rng0.io>"]
+documentation = "https://docs.rs/route-pattern/"
+repository = "https://github.com/jondot/route-pattern"
+keywords = ["parser", "route", "match"]
+license = "Apache-2.0"
+readme = "../README.md"
 
 [features]
-default = ["with-nom"]
+default = []
 
 with-nom = ["dep:nom", "dep:nom-supreme"]
 handparser = []
