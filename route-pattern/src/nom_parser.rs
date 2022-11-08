@@ -39,10 +39,8 @@ fn take_until_unbalanced(
                     bracket_counter += 1;
                 }
                 c if c == closing_bracket => {
-                    // Closing bracket.
                     bracket_counter -= 1;
                 }
-                // Can not happen.
                 _ => {}
             };
             if bracket_counter == 0 {
