@@ -12,7 +12,7 @@ license = "Apache-2.0"
 readme = "../README.md"
 
 [features]
-default = []
+default = ["with-nom"]
 
 with-nom = ["dep:nom", "dep:nom-supreme"]
 handparser = []
